@@ -16,7 +16,7 @@ export class MoviesService {
   }
 
   deleteOne(id: string): boolean {
-    this.movies.filter((movie) => movie.id !== parseInt(id, 10));
+    this.movies = this.movies.filter((movie) => movie.id !== parseInt(id, 10));
     return true;
   }
 
